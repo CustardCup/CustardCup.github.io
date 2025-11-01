@@ -1,130 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Daniel Chui">
-    <meta name="description" content="Graduate Student Portfolio Website">
-    <title>Daniel Chui - Graduate Student Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        nav {
-            text-align: center;
-            background-color: #444;
-            padding: 10px 0;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 8px;
-        }
-        h2 {
-            color: #333;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #333;
-            color: white;
-        }
-        .contact-info {
-            margin-top: 20px;
-        }
-        .skills-list, .projects-list {
-            list-style-type: none;
-            padding: 0;
-        }
-        .skills-list li, .projects-list li {
-            margin: 5px 0;
-        }
-        .web-projects-list {
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
-    
-<header style="padding: 40px 20px;">
-    <h1>Daniel Chui</h1>
-    <p>Master of Teaching | OISE @ UofT</p>
-</header>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+       name="viewport"\
+       content="width=device-width, initial-scale=1.0" />
+    <title>Danny's Word Counter</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="counter">
 
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#resume">Resume</a>
-        <a href="#projects">Educational Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="#web-projects">Web Projects</a>
-    </nav>
+      <h1>Danny's Word Counter</h1>
 
-    <div class="container">
-        <section id="about" style="display: flex; align-items: center;">
-             <div>
-            <h2>About Me</h2>
-            <p>I'm Daniel, a graduate student pursuing a Master of Teaching from OISE at UofT. I did my undergrad here in physics and astronomy
-                where I grew a passion for physics education and outreach. My research at the department of Currciulum, Teaching & Learning (CTL) focuses on digital literacy and, more specifically, AI literacy.
-            </div>
-            <img src="headshot.JPG" alt="Daniel Chui" style="width: 300px; height: 200px; border-radius: 5px; border: 3px solid white; margin-left: 20px;">
-        </section>
+      <div>
+          <p>Copy and paste your text into the area below to get a word count.</p>
+          <textarea id="text-input" name="text-input" rows="20" cols="90" oninput="countWords()"></textarea>
+      </div>
 
-        <section id="resume">
-            <h2>Resume</h2>
-            <p>You can view my full resume <a href="/CV.pdf" target="_blank">here</a>.</p>
-        </section>
+      <div class="word-count">
+        <p id="count"></p>
+      </div>
+      
+      <script src="index.js"></script>
 
-        <section id="projects">
-            <h2>Education Projects</h2>
-            <ul class="projects-list">
-                <li><strong>Project 1:</strong> <a href="https://colab.research.google.com/drive/1Go46Xes17tHZ8EdNggcOeMgC66iTbSFb?usp=sharing" target="_blank">An Intro to Coding in Astronomy SMBHs:</a> May 2024 </li>
-                <li><strong>Project 2:</strong> <a href="/AST424_Final_Report.pdf" target="_blank">AST424: Physics Education Research Project:</a> April 2025 </li>
-                <li><strong>Project ?:</strong> <a> CTL Education and AI: TBA</a> </li>
-                <li><strong>Project ?:</strong> MT Research Project: TBA</li>
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>If you’d like to get in touch, feel free to connect with me using the links below:</p>
-            <div class="contact-info">
-                <p><strong>Email:</strong> <a href="mailto:daniel.chui@mail.utoronto.ca">daniel.chui@mail.utoronto.ca</a></p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/danielchui346" target="_blank">https://www.linkedin.com/in/danielchui346</a></p>
-            </div>
-        </section>
-
-        <section id="web-projects">
-            <h2>Web Projects</h2>
-            <p>I am learning to code so feel free to check out some of my work:</p>
-            <ul class="web-projects-list">
-                <li><strong>Word Counter Web Page</strong><a href=".index1.html">Here</a></li>
-            </ul>
-        </section>
     </div>
 
-    <footer>
-        <p>2025 Daniel Chui | Graduate Student Portfolio</p>
-    </footer>
-
-</body>
+  </body>
 </html>
