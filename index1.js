@@ -11,4 +11,5 @@ function changeColour() {
     const colors = ['lightblue', 'lightgreen', 'lightcoral', 'lightgoldenrodyellow'];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     document.getElementById('myBody').style.backgroundColor = randomColor;
+    document.getElementById('text-input').style.backgroundColor = randomColor;
 }
