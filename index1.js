@@ -10,5 +10,5 @@ function countWords() {
 function changeColour() {
     const colors = ['lightblue', 'lightgreen', 'lightcoral', 'lightgoldenrodyellow'];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
-    const document.getElementById('myBody').style.backgroundColor = randomColor;
+    document.getElementById('myBody').style.backgroundColor = randomColor;
 }
