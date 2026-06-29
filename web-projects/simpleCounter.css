@@ -8,7 +8,6 @@ h1 {
     font-size: 60px
 }
 
-
 .counter {
    display: flex;
    flex-direction: row;
@@ -18,12 +17,11 @@ h1 {
    }
 
 .count {
-    height: 400px;
+    height: 300px;
     width: 400px;
     font-size: 250px;
  }
   
-
 .btnPlus, .btnMinus {
     display: block;
     box-sizing: border-box;
@@ -36,7 +34,6 @@ h1 {
     transition: transform 0.1s ease;
 }
 
-
 .settings {
    display: flex;
    flex-direction: row;
@@ -45,7 +42,6 @@ h1 {
    align-items: center;
    gap: 10px;
 }
-
 
 /* From https://uiverse.io/Voxybuns/lucky-fireant-71 */
 button {
@@ -81,4 +77,36 @@ button:hover {
 button:active {
   /* Push the button downwards when pressed */
   transform: translateY(0);
+}
+
+ @media only screen and (max-width: 700px) {
+
+  .counter {
+    display: flex;
+    gap: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   }
+  .count {
+    order: -1;
+    flex-basis:100%;
+    height: 250px;
+    width: 400px;
+    font-size: 250px;
+    margin-bottom: 0;
+  }
+
+  .btnPlus, .btnMinus {
+    display: flex;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
 }
