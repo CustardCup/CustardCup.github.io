@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: rgb(49, 53, 53);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav {
+    text-align: center;
+    background-color: #525b64;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+h2 {
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+
+#video {
+    text-align: center;
+}
+
+#code {
+    display: grid;
+    place-items: center;
+}
