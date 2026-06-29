@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Chui">
+    <meta name="description" content="Graduate Student Portfolio Website">
+    <link rel="stylesheet" href="./rubber-ducky.css">
+    <title>Daniel Chui - Grad Student Portfolio</title>
+</head>
+<body>
+
+<header style="padding: 40px 20px;">
+    <h1>Daniel Chui</h1>
+    <p>Master of Teaching | OISE @ UofT</p> 
+</header>
+
+    <nav>
+        <a href="https://custardcup.ca/#about">About Me</a>
+        <a href="https://custardcup.ca/#resume">Resume</a>
+        <a href="https://custardcup.ca/#projects">Educational Projects</a>
+        <a href="https://custardcup.ca/#publications">Publications</a>
+        <a href="https://custardcup.ca/#web-projects">Web Projects</a>
+        <a href="https://custardcup.ca/#contact">Contact</a>
+
+    </nav>
+
+    <div class="container">
+        <section>
+             <div id="title">
+                <h2>Rubber Ducky</h2>
+             </div>
+             <div id="video" >
+                <video width="800" height="500" controls>
+                 <source src="./duckydemo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+             </div>
+        </section>
+
+
+        <section>
+            <div id="explanation">
+            <h2>Code & Explanation</h2>
+            <p>A 'rubber ducky' is the name for a device that emulates 
+               a physical keyboard and can deliver a payload of keyboard inputs to a computer 
+               at incredible speeds (milliseconds). In the video above, I wrote some C++ code to my arduino leonardo
+               that would open a web URL using the terminal on a Mac. This is just a small demo of what 
+               is possible with a rubber ducky device, considering that they are commonly used for more nefarious reasons than what I've shown. Below I will 
+               leave the code for this project but you can also access it from my <a href="https://github.com/CustardCup/rubberduckystuff">GitHub</a>,
+               the device has an added switch so you can plug it into a non-target computer to upload rubber ducky programs safely.</p>
+            <div id="code">
+               <pre><code>
+                    #include &ltKeyboard.h&gt
+
+                    void setup() {
+                    pinMode(2, INPUT_PULLUP); // on-off button
+                    pinMode(13, OUTPUT); // built-in LED
+                    Serial.begin(9600);
+                    Keyboard.begin(); 
+                    // layout(KeyboardLayout_en_US) 
+                    }
+
+                    bool attack = false;
+                    String URL = "'https://c.tenor.com/485H8xylTloAAAAd/tenor.gif'";
+
+                    void loop() {
+                    if (digitalRead(2) == 1) {
+                        AbortAttack();
+                    } else {
+                        if (attack == false) { 
+                        attack = true; // assures attack only runs once
+                        delay(500);
+                        Keyboard.press(KEY_LEFT_GUI);
+                        Keyboard.press(' ');
+                        delay(200);
+                        Keyboard.release(KEY_LEFT_GUI);
+                        Keyboard.release(' ');
+                        delay(200);
+                        Keyboard.println("terminal");
+                        delay(500);
+                        Keyboard.println("open " + URL);
+                        Keyboard.end();
+                        }
+                    }
+                    }
+
+                    void AbortAttack() { // blinks until switch is flipped
+                    digitalWrite(13, HIGH);
+                    delay(1000);
+                    digitalWrite(13, LOW);
+                    delay(1000);
+                    }
+                </code></pre>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p> 2026 Daniel Chui | Graduate Student Portfolio</p>
+    </footer>
+
+</body>
+</html>
