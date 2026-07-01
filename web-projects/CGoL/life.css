@@ -1,0 +1,17 @@
+* {
+    font-family: monospace;
+}
+
+h1 {
+    font-size:40px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info {
+    width: 50%;
+}
