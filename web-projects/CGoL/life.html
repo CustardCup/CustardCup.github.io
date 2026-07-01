@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game of Life</title>
+    <link rel="stylesheet" href="game-of-life.css">
+  </head>
+  <body>
+    <div id="container">
+
+        <div id="title">
+            <h1>This. Is. Life.</h1>
+        </div>
+
+        <div id="container-game">
+            <canvas id="game" height="500" width="500" ></canvas>
+        </div>
+
+        <div id="info">
+            <p>
+            Horton Conway's <i>Life</i> is a 'cellular automaton', a mathematical model that
+            dictates the creation and destruction of cells in a binary grid over iterations. The rules
+            of <i>Life</i> are as follows:
+            </p>
+            <ul>
+                <li><b>Stasis:</b> If an alive cell has two or three alive neighbours, then it will stay alive in the next iteration.</li>
+                <li><b>Birth:</b> If a dead cell has three alive neighbours, it will be born in the next iteration. </li>
+                <li><b>Death:</b> If any cell has four or more alive neighbours, it will be overpopulate and die next iteration. If 
+                    any cell has only one alive neighbour, it will die next iteration.</li>
+            </ul>
+            <p>
+            <i>Life</i> was created by Conway in 1970 (without machine computation!) to demonstrate how a few simple rules and random initial conditions can 
+            lead to self-sustaining and organizing structures. Wait around for the cells to find a stable solution, or reload the page to try a new random
+            initial conditions. Certain structures are well understood and have even been studied which I will discuss further when I update this page. Access the 
+            javascript from my <a href="https://github.com/CustardCup/CustardCup.github.io/blob/main/web-projects/CGoL" target="_blank">github</a>. (Today: Jun 30, 2026)
+            </p>
+        </div>
+
+    </div>
+    <script src="game-of-life.js"></script>
+  </body>
+</html>
