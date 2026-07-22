@@ -47,5 +47,5 @@ footer {
 
 #code {
     display: grid;
-    place-items: center;
+    margin: auto;
 }
