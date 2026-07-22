@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Chui">
+    <meta name="description" content="Graduate Student Portfolio Website">
+    <link rel="icon" type="image/x-icon" href="/images/ducky.ico">
+    <link rel="stylesheet" href="./astro-projects.css">
+    <title>Daniel Chui - Grad Student Portfolio</title>
+</head>
+<body>
+
+<header style="padding: 40px 20px;">
+    <h1>Daniel Chui</h1>
+    <p>Master of Teaching | OISE @ UofT</p> 
+</header>
+
+    <nav>
+        <a href="https://custardcup.ca/#about">About Me</a>
+        <a href="https://custardcup.ca/#resume">Resume</a>
+        <a href="https://custardcup.ca/#projects">Educational Projects</a>
+        <a href="https://custardcup.ca/#publications">Publications</a>
+        <a href="https://custardcup.ca/#programming">Programming</a>
+        <a href="https://custardcup.ca/#contact">Contact</a>
+
+    </nav>
+
+    <div class="container">
+        <section id="photometry-lab">
+             <div>
+                <h2>AST325: Photometry Lab</h2>
+                <p>Type 1a supernovae are the brilliant second deaths of stars comporable to our Sun. They are of particular use in astronomy since they occur under strict conditions and
+                    explode with a theoritically predictable luminosity. This makes them useful for measuring extragalatic distances by watching their brightness drop off. 
+                    With over 300 time series data points in the form of CCD images, I created algorithms to sort and correct bad images, masked and extracted CCD data, and fit theoretical models to the time series
+                    in order to predict physical parameters such as when the supernova exploded (usually hidden by SNR). 
+                </p>
+             </div>
+             <div>
+                <iframe
+                width="100%"
+                height="700px"
+                src="./photometry-paper.pdf"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+             </div>
+        </section>
+
+        <section id="spectroscopy-lab">
+             <div>
+                <h2>AST325: Spectrosopy Lab</h2>
+                <p>Stars don't just radiate the visible light we use to see, they radiate over an entire spectrum of wavelengths.
+                    In fact, every object with thermal energy has a unique black body spectrum than can be captured with a spectrograph, allowing us to identify the object's
+                    properties like temperature and chemical make-up. I created a model, by callibrating a spectrograph with a neon lamp, in order to 
+                    determine the temperature and recessional velocity of a distant iron gas cloud (not accounting for redshift). 
+                </p>
+             </div>
+
+             <div>
+                <iframe
+                width="100%"
+                height="700px"
+                src="./spectroscopy-paper.pdf"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen></iframe>
+             </div>
+        </section>
+    </div>
+
+    <footer>
+        <p> 2026 Daniel Chui | Graduate Student Portfolio</p>
+    </footer>
+
+</body>
+</html>
