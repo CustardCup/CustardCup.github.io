@@ -44,6 +44,21 @@ h2 {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.progContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.progBox{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
 footer {
     text-align: center;
     padding: 15px;
