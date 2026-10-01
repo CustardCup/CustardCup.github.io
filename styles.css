@@ -11,6 +11,12 @@ header {
     padding: 40px 20px;
 }
 nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     text-align: center;
     background-color: #525b64;
     padding: 10px 0;
@@ -75,7 +81,37 @@ footer {
 .skills-list li, .projects-list li {
     margin: 5px 0;
 }
+
 #about {
     display: flex; 
     align-items: center;
+}
+
+.blog-post-header {
+    background-color: transparent;
+    color: inherit;
+    text-align: left;
+    padding: 0 0 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.blog-post-content {
+    max-width: 75ch;
+    line-height: 1.6;
+}
+
+.blog-post-content blockquote {
+    margin-left: 0;
+    padding-left: 16px;
+    border-left: 4px solid #525b64;
+    color: #555;
+}
+
+.resume-document iframe {
+    display: block;
+    width: 100%;
+    height: min(80vh, 1100px);
+    min-height: 600px;
+    border: 0;
 }
