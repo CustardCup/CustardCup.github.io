@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Daniel Chui">
+    <meta name="description" content="Force Concept Inventory for Physics Educators">
+    <link rel="icon" type="image/x-icon" href="/images/ducky.ico">
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="./FCI.css">
+    <script src="./FCI.js" defer></script>
+    <title>Force Concept Inventory | Daniel Chui</title>
+</head>
+<body>
+
+<header>
+    <h1>Daniel Chui</h1>
+    <p>Master of Teaching | OISE @ UofT</p>
+</header>
+
+<nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../resume.html">Resume</a>
+    <a href="../../educational-projects.html">Educational Projects</a>
+    <a href="../../programming.html">Programming Projects</a>
+    <!-- <a href="./blog.html">MT2 Project</a> -->
+</nav>
+
+<main class="fci-main">
+    <section aria-labelledby="inventory-heading">
+        <h2 id="inventory-heading">Force Concept Inventory</h2>
+        <form id="fci-form">
+            <div id="fci-question"></div>
+            <p id="fci-error" class="fci-error" role="alert" hidden></p>
+            <div class="fci-controls">
+                <button id="fci-previous" type="button">Previous</button>
+                <button id="fci-next" type="button">Next</button>
+                <button id="fci-submit" type="submit" hidden>Submit test</button>
+            </div>
+        </form>
+        <div id="fci-result" class="fci-result" role="status" aria-live="polite" hidden>
+            <p id="fci-score"></p>
+            <button id="fci-restart" type="button">Take the test again</button>
+        </div>
+        <noscript>This test needs JavaScript enabled to display the answer form and calculate your score.</noscript>
+    </section>
+</main>
+
+<footer>
+    <p>2026 Daniel Chui | Graduate Student Portfolio</p>
+</footer>
+
+</body>
+</html>
