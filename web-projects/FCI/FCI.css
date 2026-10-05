@@ -1,0 +1,40 @@
+.fci-main {
+    max-width: 880px;
+    margin: 20px auto;
+}
+
+.fci-figure {
+    margin: 1rem 0;
+}
+
+.fci-figure img {
+    width: 100% !important;
+    max-height: 320px;
+    margin: 0;
+    border: 0;
+    object-fit: contain;
+}
+
+.fci-choice-list {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.fci-choice {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.fci-choice input {
+    margin-right: 0.4em;
+}
+
+.fci-controls,
+.fci-result {
+    margin-top: 1rem;
+}
+
+.fci-error {
+    color: #a32626;
+}
