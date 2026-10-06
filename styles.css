@@ -2,9 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
     background-color: #f4f4f4;
 }
 header {
+    flex-shrink: 0;
     background-color: rgb(49, 53, 53);
     color: white;
     text-align: center;
@@ -35,6 +38,9 @@ section {
     border-radius: 8px;
 }
 
+div {
+    flex: 1 0 auto;
+}
 img {
     width: 150px !important;
     height: auto; 
@@ -74,6 +80,7 @@ h2 {
 }
 
 footer {
+    flex-shrink: 0;
     text-align: center;
     padding: 15px;
     background-color: #333;
