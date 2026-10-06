@@ -36,9 +36,6 @@ section {
     border-radius: 8px;
 }
 
-div {
-    flex: 1 0 auto;
-}
 img {
     width: 150px !important;
     height: auto; 
